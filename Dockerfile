@@ -8,7 +8,7 @@ ENV PROJECT=pg-graylogger
 
 WORKDIR ${PROJECT}
 
-COPY go.mod go.sum ./
+COPY go.mod go.sum .
 RUN go mod download
 
 # Copy src code from the host and compile it
