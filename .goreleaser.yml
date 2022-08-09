@@ -68,11 +68,9 @@ dockers:
       - "--label=org.opencontainers.image.revision={{ .FullCommit }}"
       - "--label=org.opencontainers.image.version={{ .Version }}"
       - "--label=org.opencontainers.image.licenses=MIT"
-      - "--label=org.opencontainers.image.source=https://github.com/rabotaru/pg-graylogger"
-      - "--label=org.opencontainers.image.url=https://github.com/rabotaru/pg-graylogger/pkgs/container/pg-graylogger"
-
+      - "--label=org.opencontainers.image.source=https://github.com/crazypoint/pg-graylogger"
+      - "--label=org.opencontainers.image.url=https://github.com/crazypoint/pg-graylogger/pkgs/container/pg-graylogger"
       - "--platform=linux/amd64"
-      - "--target=goreleaser"
-      - "--pull"
+
     goos: linux
     goarch: amd64
