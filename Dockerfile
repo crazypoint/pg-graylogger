@@ -8,6 +8,6 @@ RUN apk --update --no-cache add ca-certificates && update-ca-certificates
 ### Scratch with goreleaser
 FROM scratch as scratch-goreleaser
 COPY --from=base-release /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY dist/pg-graylogger_linux_amd64_v1/pg-graylogger /bin/
+COPY /dist/pg-graylogger_linux_amd64_v1/pg-graylogger /bin/
 ENTRYPOINT ["/bin/pg-graylogger"]
 USER 65534
