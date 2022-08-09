@@ -8,11 +8,11 @@ ENV PROJECT=pg-graylogger
 
 WORKDIR ${PROJECT}
 
-COPY go.mod go.sum .
-RUN go mod download
 
 # Copy src code from the host and compile it
 COPY . .
+RUN go mod download
+
 RUN go build -a -o /${PROJECT} ./main.go
 
 ### Base image with shell
