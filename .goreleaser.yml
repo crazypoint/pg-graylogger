@@ -59,8 +59,8 @@ changelog:
 dockers:
   - dockerfile: Dockerfile
     image_templates:
-      - "ghcr.io/rabotaru/pg-graylogger:{{ .Version }}"
-      - "ghcr.io/rabotaru/pg-graylogger:latest"
+      - "ghcr.io/crazypoint/pg-graylogger:{{ .Version }}"
+      - "ghcr.io/crazypoint/pg-graylogger:latest"
 
     build_flag_templates:
       - "--label=org.opencontainers.image.created={{ .Date }}"
